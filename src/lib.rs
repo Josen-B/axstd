@@ -4,6 +4,10 @@
 //! to rust [std], but calling the functions directly in ArceOS modules, instead
 //! of using libc and system calls.
 //!
+//! These features are exactly the same as those in [axfeat], they are used to
+//! provide users with the selection of features in axfeat, without import
+//! [axfeat] additionally:
+//!
 //! ## Cargo Features
 //!
 //! - CPU
@@ -13,6 +17,9 @@
 //!     - `irq`: Enable interrupt handling support.
 //! - Memory
 //!     - `alloc`: Enable dynamic memory allocation.
+//!     - `alloc-tlsf`: Use the TLSF allocator.
+//!     - `alloc-slab`: Use the slab allocator.
+//!     - `alloc-buddy`: Use the buddy system allocator.
 //!     - `paging`: Enable page table manipulation.
 //! - Task management
 //!     - `multitask`: Enable multi-threading support.
