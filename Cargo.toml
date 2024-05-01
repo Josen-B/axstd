@@ -69,9 +69,9 @@ log-level-debug = ["axfeat/log-level-debug"]
 log-level-trace = ["axfeat/log-level-trace"]
 
 [dependencies]
-axfeat = { path = "../../api/axfeat" }
-arceos_api = { path = "../../api/arceos_api" }
-axio = { path = "../../crates/axio" }
-axerrno = { path = "../../crates/axerrno" }
-spinlock = { path = "../../crates/spinlock" }
-arch_boot = { path = "../../entry/arch_boot" }
+axfeat = { git = "https://github.com/Starry-OS/axfeat.git" }
+arceos_api = { git = "https://github.com/Starry-OS/arceos_api.git" }
+axio = { git = "https://github.com/Starry-OS/axio.git" }
+axerrno = { git = "https://github.com/Starry-OS/axerrno.git" }
+spinlock = { git = "https://github.com/Starry-OS/spinlock.git" }
+arch_boot = { git = "https://github.com/Starry-OS/arch_boot.git" }
