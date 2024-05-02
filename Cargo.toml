@@ -20,13 +20,13 @@ documentation = "https://rcore-os.github.io/arceos/axstd/index.html"
 default = []
 
 # Multicore
-smp = ["axfeat/smp", "spinlock/smp"]
+smp = ["axfeat/smp", "spinlock/smp", "arch_boot/smp"]
 
 # Floating point/SIMD
-fp_simd = ["axfeat/fp_simd"]
+fp_simd = ["axfeat/fp_simd", "arch_boot/fp_simd"]
 
 # Interrupts
-irq = ["arceos_api/irq", "axfeat/irq"]
+irq = ["arceos_api/irq", "axfeat/irq", "arch_boot/irq"]
 
 # Memory
 alloc = ["arceos_api/alloc", "axfeat/alloc", "axio/alloc"]
@@ -39,8 +39,8 @@ tls = ["axfeat/tls"]
 # Multi-threading and scheduler
 multitask = ["arceos_api/multitask", "axfeat/multitask"]
 sched_fifo = ["axfeat/sched_fifo"]
-sched_rr = ["axfeat/sched_rr"]
-sched_cfs = ["axfeat/sched_cfs"]
+sched_rr = ["axfeat/sched_rr", "arch_boot/preempt"]
+sched_cfs = ["axfeat/sched_cfs", "arch_boot/preempt"]
 
 # File system
 fs = ["arceos_api/fs", "axfeat/fs"]
