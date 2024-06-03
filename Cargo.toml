@@ -47,7 +47,7 @@ sched_cfs = ["axfeat/sched_cfs", "arch_boot/preempt"]
 fs = ["arceos_api/fs", "axfeat/fs"]
 myfs = ["arceos_api/myfs", "axfeat/myfs"]
 fatfs = ["axfeat/fatfs"]
-ext4fs = ["axfeat/ext4fs", "fs"]
+lwext4_rust = ["axfeat/lwext4_rust", "fs"]
 
 # Networking
 net = ["arceos_api/net", "axfeat/net"]
